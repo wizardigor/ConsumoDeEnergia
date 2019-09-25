@@ -1,0 +1,5 @@
+C:\Users\Aluno\Documents\Igor ADS\Programação Visual\Exercicios\ConsumoDeEnergia\ConsumoDeEnergia\obj\Debug\ConsumoDeEnergia.csprojAssemblyReference.cache
+C:\Users\Aluno\Documents\Igor ADS\Programação Visual\Exercicios\ConsumoDeEnergia\ConsumoDeEnergia\obj\Debug\ConsumoDeEnergia.FormConsumo.resources
+C:\Users\Aluno\Documents\Igor ADS\Programação Visual\Exercicios\ConsumoDeEnergia\ConsumoDeEnergia\obj\Debug\ConsumoDeEnergia.Properties.Resources.resources
+C:\Users\Aluno\Documents\Igor ADS\Programação Visual\Exercicios\ConsumoDeEnergia\ConsumoDeEnergia\obj\Debug\ConsumoDeEnergia.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\Igor ADS\Programação Visual\Exercicios\ConsumoDeEnergia\ConsumoDeEnergia\obj\Debug\ConsumoDeEnergia.csproj.CoreCompileInputs.cache
