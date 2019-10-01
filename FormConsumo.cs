@@ -42,5 +42,44 @@ namespace ConsumoDeEnergia
             txtConsumo.Clear();
             txtCasa.Focus();
         }
+
+        private void processarLeituras(DataGridView dgv)
+        {
+            DataGridViewCell cell = dgvLeituras.Rows[0].Cells[0];
+            this.leituras.Add(new Leitura("Total", 0));
+
+            for (int i = 0; i < 3; i++)
+            {
+                                    //linhas.ultima linha
+                dgv.Rows[dgvLeituras.Rows.Count - 1].Cells[i].Style.BackColor = Color.Blue;
+                dgv.Rows[dgvLeituras.Rows.Count - 1].Cells[i].Style.ForeColor = Color.Yellow;
+                dgv.Rows[dgvLeituras.Rows.Count - 1].Cells[i].Style.Font = new Font(cell.InheritedStyle.Font, FontStyle.Bold);
+            }
+
+            double totalConsumo = 0;
+            double totalDesconto = 0;
+            
+            //cria a variavel leitura do tipo leituras
+            foreach (var leitura in leituras)//leitura comtem casa, consumo e desconto.
+            {
+                totalConsumo += leitura.Consumo;
+                totalDesconto += leitura.Desconto;
+            }
+
+            dgv[0, dgv.Rows.Count - 1].Value = "Total";
+            dgv[1, dgv.Rows.Count - 1].Value = totalConsumo.ToString();
+            dgv[2, dgv.Rows.Count - 1].Value = totalDesconto.ToString();
+            lblResultado.Text = "Total consumo sem desconto" + (totalConsumo + totalDesconto).ToString();
+        }
+
+        private void BtnRegistrar_Click(object sender, EventArgs e)
+        {
+            RegistraConsumo(txtCasa.Text, Convert.ToDouble(txtConsumo.Text));
+        }
+
+        private void BtnProcessar_Click(object sender, EventArgs e)
+        {
+            processarLeituras(dgvLeituras);
+        }
     }       
  }

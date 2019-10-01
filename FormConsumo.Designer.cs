@@ -96,6 +96,7 @@
             this.btnProcessar.TabIndex = 6;
             this.btnProcessar.Text = "Processar Dados";
             this.btnProcessar.UseVisualStyleBackColor = true;
+            this.btnProcessar.Click += new System.EventHandler(this.BtnProcessar_Click);
             // 
             // btnRegistrar
             // 
@@ -105,6 +106,7 @@
             this.btnRegistrar.TabIndex = 7;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // FormConsumo
             // 
